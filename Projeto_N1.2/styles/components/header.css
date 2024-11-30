@@ -1,0 +1,96 @@
+header {
+    background-color: var(--cor-branca);
+    padding: 1rem 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.nome-empresa {
+    background: linear-gradient(45deg, var(--cor-gradiente-1), var(--cor-gradiente-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(320deg, var(--cor-gradiente-1), var(--cor-gradiente-2));
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+nav a:hover {
+    background: linear-gradient(45deg, var(--cor-gradiente-1), var(--cor-gradiente-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+nav ul li:last-child a {
+    background: var(--cor-neon);
+    color: var(--cor-branca);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+}
+
+nav ul li:last-child a::after {
+    display: none;
+}
+
+nav ul li:last-child a:hover {
+    background: linear-gradient(45deg, var(--cor-gradiente-1), var(--cor-gradiente-2));
+    color: var(--cor-branca);
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+} 

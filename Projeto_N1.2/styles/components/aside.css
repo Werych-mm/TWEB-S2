@@ -1,0 +1,25 @@
+
+.eah {
+    width: 225px;
+    height: 225px;
+    border-radius: 5%;
+    box-shadow: var(--box-shadow);
+    object-fit: cover;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+aside div img {
+    transition: all 0.5s ease;
+}
+
+aside div img:hover {
+    transform: scale(1.2);
+    box-shadow: var(--box-shadow);
+}
+
+.eva {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
