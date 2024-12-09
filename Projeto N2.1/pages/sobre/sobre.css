@@ -6,10 +6,15 @@ section {
     width: 250px;
 }
 
+.sectso {
+    margin-top: 30px;
+}
+
 .imgse {
     width: 55%;
     margin-left: 450px;
     height: 250px;
+    margin-top: 25px;
 }
 
 .imgs {
@@ -18,7 +23,7 @@ section {
     padding: 15px;
     cursor: pointer;
     transition: ease 1s;
-    border-radius: 1000000px;
+    border-radius: 30px;
 }
 
 .imgs:hover {

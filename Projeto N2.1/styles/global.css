@@ -22,7 +22,7 @@ header {
     justify-content: space-around;
     background-color: var(--cor-gradiente-1);
     color: var(--cor-branca);
-    
+    padding
 }
 
 header .titulo {
@@ -50,17 +50,14 @@ nav ul li {
     list-style: none;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 footer {
-    margin-top: auto;
-    background-color: var(--cor-gradiente-1);
-    color: var(--cor-branca);
+    position: absolute;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--cor-gradiente-2);
+    color: var(--cor-branca);
+    width: 100%;
     padding: 20px;
 }

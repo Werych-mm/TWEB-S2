@@ -10,14 +10,13 @@
 
 .netu {
     width: 500px;
-    
 }
 
 .dif {
-    border: 5px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 h3 {
