@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--cor-gradiente-1);
+    color: var(--cor-texto);
 }
 
 .buth {
@@ -26,7 +26,7 @@
     margin: 5px;
     cursor: pointer;
     margin-left: 825px;
-    gap: 1rem;
+    
 }
 
 .tit, .buth {

@@ -13,7 +13,7 @@
     --cor-gradiente-2: #03123f;
     --cor-branca: #fffcff;
     --cor-texto: #bb261a;
-    --box-shadow: 0 2px 15px #00082e; 
+    --box-shadow: 0 2px 15px #2e0000; 
 }
 
 header {
@@ -22,10 +22,10 @@ header {
     justify-content: space-around;
     background-color: var(--cor-gradiente-1);
     color: var(--cor-branca);
-    padding
+    padding: 10px;
 }
 
-header .titulo {
+header, .titulo {
     align-items: center;
     color: var(--cor-branca);
 }
@@ -50,14 +50,37 @@ nav ul li {
     list-style: none;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--cor-gradiente-2);
+ul a {
     color: var(--cor-branca);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--cor-branca);
+    width: 0;
+    transition: width 0.3s ease;
+  }
+  
+ul a:hover::after {
     width: 100%;
+    animation: heartbeat116 1.5s infinite;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-gradiente-1);
+    color: var(--cor-branca);
     padding: 20px;
+    bottom: 0;
 }
